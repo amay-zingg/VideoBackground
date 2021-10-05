@@ -1,85 +1,96 @@
-  a {
-    color: $black;
-    text-decoration: none;
-    padding: 1px;
-    border-radius: 40px;
-  }
-  
-  a:hover, a:active {
-   text-decoration: underline;
-  }
+a {
+  color: $black;
+  text-decoration: none;
+  padding: 1px;
+  border-radius: 40px;
+}
 
-  // * * * * HEADER
-  header{
-    z-index: 40;
-  }
+a:hover,
+a:active {
+  text-decoration: underline;
+}
 
-  header .logo{
-    font-family: $headingFont;
-    font-size: 5vw;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
+// * * * * HEADER
+header {
+  z-index: 40;
+}
 
-  // * * * * TOGGLE BUTTONS
-  .buttons{
-    position: relative;
-    cursor: pointer;
-    color: $black;
-    margin-left: 10px;
-    @include flexbox($placeItems: center, $placeContent: space-between);
-  }
+header .logo {
+  font-family: $headingFont;
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
-  .buttons:hover, .buttons:active {
-    color: $black;
-  }
+// * * * * TOGGLE BUTTONS
+.buttons {
+  position: relative;
+  cursor: pointer;
+  color: $black;
+  margin-left: 10px;
+  @include flexbox($placeItems: center, $placeContent: space-between);
+}
 
-  .buttons.lightDark{
-    @include flexbox($placeItems: center, $placeContent: space-between, $direction: row,  $wrap: wrap);
-  }
+.buttons:hover,
+.buttons:active {
+  color: $black;
+}
 
-  .buttons.active ion-icon:nth-child(2), .buttons.active  .switch:nth-child(2) {
-    display: block;
-  }
+.buttons.lightDark {
+  @include flexbox(
+    $placeItems: center,
+    $placeContent: space-between,
+    $direction: row,
+    $wrap: wrap
+  );
+}
 
-  .buttons.active ion-icon:nth-child(1), .buttons.active  .switch:nth-child(1) {
-    display: none;
-  }
+.buttons.active ion-icon:nth-child(2),
+.buttons.active .switch:nth-child(2) {
+  display: block;
+}
 
-  .switch {
-    height: 40px;
-    width: 40px;
-  }
+.buttons.active ion-icon:nth-child(1),
+.buttons.active .switch:nth-child(1) {
+  display: none;
+}
 
-  .switch.light{
-    background-image: url("../../assets/lightOn.svg");
-    background-size: contain;
-  }
+.switch {
+  height: 40px;
+  width: 40px;
+}
 
-  .switch.dark{
-    background-image: url("../../assets/lightOff.svg");
-    background-size: contain;
-  }
+.switch.light {
+  background-image: url("../assets/lightOn.svg");
+  background-size: contain;
+}
 
-  ion-icon {
-    font-size: 40px;
-  }
+.switch.dark {
+  background-image: url("../assets/lightOff.svg");
+  background-size: contain;
+}
 
-  ion-icon:nth-child(2), .switch:nth-child(2) {
-    display: none;
-  }
+ion-icon {
+  font-size: 40px;
+}
 
-  /* * * * * * * * * * * * * * WEB STANDARDS * * * * * * * * * * * * * * */
-  // * * * * INPUTS
-  input {
-    font-family: $bodyFont;
-    color: $black;
-  }
+ion-icon:nth-child(2),
+.switch:nth-child(2) {
+  display: none;
+}
 
-  input:focus-within, select:focus-within, textarea:focus-within {
-    background: $accent;
-    outline: none;
-    border: 2px solid $black;
-  }
-  
+/* * * * * * * * * * * * * * WEB STANDARDS * * * * * * * * * * * * * * */
+// * * * * INPUTS
+input {
+  font-family: $bodyFont;
+  color: $black;
+}
+
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
+  background: $accent;
+  outline: none;
+  border: 2px solid $black;
+}
