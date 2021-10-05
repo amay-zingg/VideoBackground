@@ -545,7 +545,8 @@ a {
   border-radius: 40px;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 
@@ -584,7 +585,8 @@ header .logo {
           flex-grow: 0;
 }
 
-.buttons:hover, .buttons:active {
+.buttons:hover,
+.buttons:active {
   color: #333;
 }
 
@@ -607,11 +609,13 @@ header .logo {
           flex-grow: 0;
 }
 
-.buttons.active ion-icon:nth-child(2), .buttons.active .switch:nth-child(2) {
+.buttons.active ion-icon:nth-child(2),
+.buttons.active .switch:nth-child(2) {
   display: block;
 }
 
-.buttons.active ion-icon:nth-child(1), .buttons.active .switch:nth-child(1) {
+.buttons.active ion-icon:nth-child(1),
+.buttons.active .switch:nth-child(1) {
   display: none;
 }
 
@@ -621,12 +625,12 @@ header .logo {
 }
 
 .switch.light {
-  background-image: url("../../assets/lightOn.svg");
+  background-image: url("../assets/lightOn.svg");
   background-size: contain;
 }
 
 .switch.dark {
-  background-image: url("../../assets/lightOff.svg");
+  background-image: url("../assets/lightOff.svg");
   background-size: contain;
 }
 
@@ -634,7 +638,8 @@ ion-icon {
   font-size: 40px;
 }
 
-ion-icon:nth-child(2), .switch:nth-child(2) {
+ion-icon:nth-child(2),
+.switch:nth-child(2) {
   display: none;
 }
 
@@ -644,7 +649,9 @@ input {
   color: #333;
 }
 
-input:focus-within, select:focus-within, textarea:focus-within {
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
   background: aquamarine;
   outline: none;
   border: 2px solid #333;
