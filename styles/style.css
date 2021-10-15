@@ -294,6 +294,14 @@ html {
   color: #fff;
 }
 
+body.dark ul.navigation {
+  background-color: black;
+}
+
+body.dark ul.navigation li a {
+  color: white;
+}
+
 ul,
 li {
   list-style: none;
